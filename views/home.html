@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Styles -->
+    <link rel="stylesheet" href="/styles/style.css">
+    <!-- Favicon -->
+     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <!-- Scripts -->
+     <script src="/scripts/script.js" defer></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Paprika&display=swap" rel="stylesheet">
+
+    <title>Vacation</title>
+</head>
+<body>
+    <form action="#" method="get" id="vacation-form">
+        <img src="/images/banner.jpg" id="banner-image" alt="tropical beach">
+        <h1 id="banner-title" class="paprika">Book Your Dream Vacation</h1>
+        <fieldset>
+            <label for="destination" id="destination-label">Destination</label>
+            <select name="destination" id="destination">
+                <option value="none">Choose a destination...</option>
+                <option value="mex">Mexico</option>
+                <option value="egp">Egypt</option>
+                <option value="itl">Italy</option>
+                <option value="frc">France</option>
+                <option value="jpn">Japan</option>
+            </select>
+            <span class="error-msg" id="dest-error">Please select a destination</span>
+            
+            <label for="departure" id="departure-label">Departure Date</label>
+            <input type="date" name="departure" id="departure">
+            
+            <label for="travelers" id="travelers-label">Number of Travelers</label>
+            <input type="number" name="travelers" id="travelers" placeholder="0" value="0">
+            <span class="error-msg" id="trvl-error">Number of travelrs must be greater than 0</span>
+        </fieldset>
+        <button type="submit">Find My Vacation</button>
+    </form>
+    <footer>
+        <a href="https://github.com/CMBCoding/vacation">GitHub Repository</a>
+    </footer>
+</body>
+</html>

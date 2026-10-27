@@ -1,0 +1,153 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Google Fonts - Paprika */
+.paprika {
+  font-family: "Paprika", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+    font-size: 16px;
+    margin: 0 auto;
+    background-color: #008b8b;
+}
+
+#banner-title {
+    position: relative;
+    bottom: 6rem;
+    top: -6rem;
+    margin: 0;
+    padding: 0;
+    color: orange;
+    font-weight: 800;
+    font-style: italic;
+    text-shadow: 2px 2px 2px #008b8b;
+}
+
+#banner-image {
+    height: 10rem;
+    margin: 0;
+    width: 100%;
+    border-top-right-radius: inherit;
+    border-top-left-radius: inherit;
+}
+
+#vacation-form {
+    margin: 5.5rem auto;
+    padding: 0 0 1.5rem 0;
+    width: 80%;
+    max-width: 43.75rem;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+}
+
+fieldset {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+    "dest-lbl dest-lbl dest-lbl dest-lbl"
+    "dest dest dest dest"
+    "dest-err dest-err dest-err dest-err"
+    "dept-lbl dept-lbl trvl-lbl trvl-lbl"
+    "dept dept trvl trvl"
+    "trvl-err trvl-err trvl-err trvl-err"
+    ;
+    gap: 1rem 0.5rem;
+    width: 100%;
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    margin: 0.5rem;
+    border: none;
+}
+
+label {
+    display: flex;
+    align-items: flex-end;
+    align-content: center;
+    flex-direction: row;
+    font-weight: 600;
+}
+
+#destination-label {
+    grid-area: dest-lbl;
+}
+#destination {
+    grid-area: dest;
+
+}
+
+#departure-label {
+    grid-area: dept-lbl;
+}
+#departure {
+    grid-area: dept;
+}
+
+#travelers {
+    grid-area: trvl;
+}
+#travelers-label {
+    grid-area: trvl-lbl;
+}
+
+input, select {
+    border-radius: 0.25rem;
+    height: 2.25rem;
+    margin-bottom: 0;
+}
+
+.error-msg {
+    display: none;
+    width: 100%;
+}
+
+.dest-error {
+    grid-area: dest-err;
+}
+
+.trvl-error {
+    grid-area: trvl-err;
+}
+
+button {
+    height: 2.5rem;
+    border-radius: 1rem;
+    width: 14rem;
+    background-color: darkcyan;
+    color: white;
+    font-weight: 800;
+    border: none;
+}
+
+button:hover, button:active {
+    background-color: white;
+    color: darkcyan;
+    border: solid 0.25rem darkcyan;
+}
+ 
+footer {
+    text-align: center;
+    font-weight: 700;
+}
+
+a:hover {
+    font-weight: 800;
+    color: orange;
+    font-style: italic;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
