@@ -5,7 +5,7 @@ import express from 'express';
 const app = express();
 
 //Define designated port, 3005
-const PORT = 3005;
+const PORT = 3006;
 
 //Enable static file sharing
 app.use(express.static("public"));
